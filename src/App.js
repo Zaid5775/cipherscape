@@ -19,22 +19,22 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Signup" element={<Signup />} />
+        <Route path="/cipherscape/Signup" element={<Signup />} />
         <Route
-          path="/Login"
+          path="/cipherscape/Login"
           element={<Login handleLogin={handleLogin} />}
         />
         <Route
-          path="/"
+          path="/cipherscape"
           element={
             loggedIn ? (
               <Cipher handleLogout={handleLogout} />
             ) : (
-              <Navigate to="/Login" />
+              <Navigate to="/cipherscape/Login" />
             )
           }
         />
-        <Route path="/Howtoplay" element={<Howtoplay />} />
+        <Route path="/cipherscape/Howtoplay" element={<Howtoplay />} />
       </Routes>
     </BrowserRouter>
   );

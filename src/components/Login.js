@@ -18,7 +18,7 @@ function Login({ handleLogin }) {
         console.log(result);
         if (result.data.success) {
           handleLogin();
-          navigate("/");
+          navigate("/cipherscape");
         } else {
           alert(result.data.message);
         }
@@ -61,7 +61,7 @@ function Login({ handleLogin }) {
         {/* </div> */}
       </form>
       <p id="alr">Don't have an account?</p>
-      <Link to="/Signup">
+      <Link to="/cipherscape/Signup">
         {/* <div className="button200"> */}
         <button>Sign up</button>
       </Link>
