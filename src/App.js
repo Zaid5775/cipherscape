@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import Cipher from './components/cipher';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import Howtoplay from './components/Howtoplay';
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setLoggedIn(true);
+  };
+
+  const handleLogout = () => {
+    setLoggedIn(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/Signup" element={<Signup />} />
+        <Route
+          path="/Login"
+          element={<Login handleLogin={handleLogin} />}
+        />
+        <Route
+          path="/"
+          element={
+            loggedIn ? (
+              <Cipher handleLogout={handleLogout} />
+            ) : (
+              <Navigate to="/Login" />
+            )
+          }
+        />
+        <Route path="/Howtoplay" element={<Howtoplay />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

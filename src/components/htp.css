@@ -1,0 +1,42 @@
+*{
+color: #CC57C7;
+}
+
+
+.Head{
+    
+    margin-top: 70px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+#logo{
+    width: 250px;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.middle {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.heading{
+    font-size: 24px;
+}
+
+
+.content {
+    line-height: 1.5; 
+    word-spacing: 10px;
+}
