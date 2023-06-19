@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/cipherscape/static/css/main.8aa45f80.css",
+    "main.js": "/cipherscape/static/js/main.509016ab.js",
+    "static/js/787.7fdb7522.chunk.js": "/cipherscape/static/js/787.7fdb7522.chunk.js",
+    "static/media/song.mp3": "/cipherscape/static/media/song.42f8e4a750d57710958f.mp3",
+    "static/media/cipher1.png": "/cipherscape/static/media/cipher1.dd544a8950f663bc1f43.png",
+    "static/media/Magz.otf": "/cipherscape/static/media/Magz.c16ee632bd23f9fb1719.otf",
+    "index.html": "/cipherscape/index.html",
+    "main.8aa45f80.css.map": "/cipherscape/static/css/main.8aa45f80.css.map",
+    "main.509016ab.js.map": "/cipherscape/static/js/main.509016ab.js.map",
+    "787.7fdb7522.chunk.js.map": "/cipherscape/static/js/787.7fdb7522.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8aa45f80.css",
+    "static/js/main.509016ab.js"
+  ]
+}
