@@ -15,18 +15,19 @@ function App() {
 
   return (
     <BrowserRouter>
+      {loggedIn ? (
+        <Routes>
+          <Route path="/" element={<Under />} />
+          <Route path="/Cipher" element={<Cipher />} />
+          <Route path="/Howtoplay" element={<Howtoplay />} />
+        </Routes>
+      ) : (
+        <Navigate to="/Login" />
+      )}
+
       <Routes>
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Login" element={<Login handleLogin={handleLogin} />} />
-        {loggedIn ? (
-          <>
-            <Route path="/" element={<Under />} />
-            <Route path="/Cipher" element={<Cipher />} />
-            <Route path="/Howtoplay" element={<Howtoplay />} />
-          </>
-        ) : (
-          <Navigate to="/Login" />
-        )}
       </Routes>
     </BrowserRouter>
   );
