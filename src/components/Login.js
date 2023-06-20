@@ -12,6 +12,7 @@ function Login({ handleLogin }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     
+    axios.defaults.withCredentials = true;
 
     axios
       .post("https://cipherscape-api.onrender.com/Login", { username, password })

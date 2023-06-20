@@ -4,14 +4,18 @@ body{
 }
 
 .under{
+    margin-top: 250px;
     align-items: center;
     text-align: center;
     font-size: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 
 @media screen and (max-width: 800px) {
-    .underP{
-        font-size: 15px;
+    .under{
+        margin-top: 250px;
+        font-size: 20px;
     }
 }
