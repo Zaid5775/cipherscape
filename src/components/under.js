@@ -1,7 +1,7 @@
 import React from "react";
 import './under.css'
 
-function Under(){
+const Under = () => {
 
 
     return(
