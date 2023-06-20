@@ -15,7 +15,7 @@ const Cipher = () => {
   useEffect(() => {
     // Fetch the user's data from the server to check if they are logged in
     axios
-      .get("http://localhost:9002/", { withCredentials: true })
+      .get("https://cipherscape-api.onrender.com/", { withCredentials: true })
       .then((result) => {
         if (result.data.success) {
           setUsername(result.data.username);

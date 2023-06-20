@@ -4,6 +4,7 @@ import Cipher from './components/cipher';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Howtoplay from './components/Howtoplay';
+import Under from './components/under'
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -28,7 +29,7 @@ function App() {
           path="/cipherscape"
           element={
             loggedIn ? (
-              <Cipher handleLogout={handleLogout} />
+              <Under handleLogout={handleLogout} />
             ) : (
               <Navigate to="/cipherscape/Login" />
             )

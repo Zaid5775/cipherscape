@@ -13,7 +13,7 @@ function Login({ handleLogin }) {
     e.preventDefault();
 
     axios
-      .post("http://localhost:9002/Login", { username, password })
+      .post("https://cipherscape-api.onrender.com/Login", { username, password })
       .then((result) => {
         console.log(result);
         if (result.data.success) {

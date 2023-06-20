@@ -1,0 +1,17 @@
+body{
+    background-color:  #080c10;
+    color: #cc57c7;
+}
+
+.under{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .underP{
+        font-size: 15px;
+    }
+}

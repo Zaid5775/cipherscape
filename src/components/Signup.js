@@ -34,7 +34,7 @@ const handleSubmit = (e) =>{
       return;
     }
 
-            axios.post("http://localhost:9002/Signup", {username, email, password, cpass} )
+            axios.post("https://cipherscape-api.onrender.com/Signup", {username, email, password, cpass} )
             .then( result => {
                 alert("Successfully Registered!!")
                 console.log(result)
