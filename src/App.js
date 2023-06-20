@@ -12,23 +12,31 @@ function App() {
   const handleLogin = () => {
     setLoggedIn(true);
   };
+  
+  const handleLogout = () => {
+    setLoggedIn(false);
+  };
+
 
   return (
     <BrowserRouter>
+
+<Routes>
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Login" element={<Login handleLogin={handleLogin} />} />
+      </Routes>
+      
       {loggedIn ? (
         <Routes>
-          <Route path="/" element={<Under />} />
-          <Route path="/Cipher" element={<Cipher />} />
+          <Route path="/" element={<Under handleLogout={handleLogout}  />} />
+        
           <Route path="/Howtoplay" element={<Howtoplay />} />
         </Routes>
       ) : (
         <Navigate to="/Login" />
       )}
 
-      <Routes>
-        <Route path="/Signup" element={<Signup />} />
-        <Route path="/Login" element={<Login handleLogin={handleLogin} />} />
-      </Routes>
+     
     </BrowserRouter>
   );
 }
