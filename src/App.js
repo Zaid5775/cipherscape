@@ -4,7 +4,7 @@ import Cipher from './components/cipher';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Howtoplay from './components/Howtoplay';
-import Under from './components/under';
+import Under from './components/under'
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -12,31 +12,31 @@ function App() {
   const handleLogin = () => {
     setLoggedIn(true);
   };
-  
+
   const handleLogout = () => {
     setLoggedIn(false);
   };
 
-
   return (
     <BrowserRouter>
-
-<Routes>
+      <Routes>
         <Route path="/Signup" element={<Signup />} />
-        <Route path="/Login" element={<Login handleLogin={handleLogin} />} />
+        <Route
+          path="/Login"
+          element={<Login handleLogin={handleLogin} />}
+        />
+        <Route
+          path="/"
+          element={
+            loggedIn ? (
+              <Under handleLogout={handleLogout} />
+            ) : (
+              <Navigate to="/Login" />
+            )
+          }
+        />
+        <Route path="//Howtoplay" element={<Howtoplay />} />
       </Routes>
-      
-      {loggedIn ? (
-        <Routes>
-          <Route path="/" element={<Under handleLogout={handleLogout}  />} />
-        
-          <Route path="/Howtoplay" element={<Howtoplay />} />
-        </Routes>
-      ) : (
-        <Navigate to="/Login" />
-      )}
-
-     
     </BrowserRouter>
   );
 }
