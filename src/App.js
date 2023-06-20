@@ -13,9 +13,9 @@ function App() {
     setLoggedIn(true);
   };
 
-  const handleLogout = () => {
-    setLoggedIn(false);
-  };
+  // const handleLogout = () => {
+  //   setLoggedIn(false);
+  // };
 
   return (
     <BrowserRouter>
@@ -29,7 +29,7 @@ function App() {
           path="/"
           element={
             loggedIn ? (
-              <Under handleLogout={handleLogout} />
+              <Under  />
             ) : (
               <Navigate to="/Login" />
             )
