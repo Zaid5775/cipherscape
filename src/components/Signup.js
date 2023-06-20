@@ -38,7 +38,7 @@ const handleSubmit = (e) =>{
             .then( result => {
                 alert("Successfully Registered!!")
                 console.log(result)
-                navigate("/cipherscape/Login")
+                navigate("/Login")
                 
             })
             .catch((error) => {
@@ -98,7 +98,7 @@ const handleSubmit = (e) =>{
         </form>
       <p id="alr">already have account?</p>
       <div className="button200">
-      <Link to='/cipherscape/Login'><button>Login</button></Link>
+      <Link to='/Login'><button>Login</button></Link>
       </div>
     </div>
   );

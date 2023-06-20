@@ -11,6 +11,7 @@ function Login({ handleLogin }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
 
     axios
       .post("https://cipherscape-api.onrender.com/Login", { username, password })
@@ -18,7 +19,7 @@ function Login({ handleLogin }) {
         console.log(result);
         if (result.data.success) {
           handleLogin();
-          navigate("/cipherscape");
+          navigate("/");
         } else {
           alert(result.data.message);
         }
@@ -61,7 +62,7 @@ function Login({ handleLogin }) {
         {/* </div> */}
       </form>
       <p id="alr">Don't have an account?</p>
-      <Link to="/cipherscape/Signup">
+      <Link to="/Signup">
         {/* <div className="button200"> */}
         <button>Sign up</button>
       </Link>
