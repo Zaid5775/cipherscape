@@ -18,7 +18,7 @@ const navigate = useNavigate()
           console.log("ho gyaa yayyyyyyyyyyyyyyy")
         }
         else{
-          navigate("/Login")
+          // navigate("/Login")
           console.log("nhi hai bhai naam")
         }
         
