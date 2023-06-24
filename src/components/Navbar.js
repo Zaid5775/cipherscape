@@ -17,7 +17,7 @@ const Navbar = () => {
     
 
 
-    axios.get("http://localhost:9002")
+    axios.get("https://cipherscape-api.onrender.com/")
       .then((res) => {
         if (res.data.success) {
           setUsername(res.data.username);
