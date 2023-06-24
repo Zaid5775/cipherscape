@@ -10,8 +10,10 @@ const Under = () => {
 const navigate = useNavigate()
   axios.defaults.withCredentials = true
   useEffect(() => {
-    axios
-      .get("http://localhost:9002")
+
+axios
+      .get("https://cipherscape-api.onrender.com")
+
       .then((res) => {
         if(res.data.success){
           setName(res.data.username);
