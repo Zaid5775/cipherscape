@@ -2,17 +2,28 @@ nav {
   background-color: #070A0E;
   color: #CC57C7;
   padding: 10px;
-  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navvv {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0 20px;
 }
 
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin: 0;
   padding: 0;
-  margin-right: 30px;
-  margin-left: 30px;
 }
 
 #setting,
@@ -28,11 +39,28 @@ li {
 a {
   color: #CC57C7;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.usrul {
+  display: flex;
+  align-items: center;
+}
+
+#usr {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+#usr img {
+  width: 30px;
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 800px) {

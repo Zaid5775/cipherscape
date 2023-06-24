@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import "./Login.css";
 
-function Login({ handleLogin }) {
+function Login({handleLogin}) {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -15,7 +15,7 @@ function Login({ handleLogin }) {
     axios.defaults.withCredentials = true;
 
     axios
-      .post("https://cipherscape-api.onrender.com/Login", { username, password })
+      .post("http://localhost:9002/Login", { username, password })
       .then((result) => {
         console.log(result);
         if (result.data.success) {

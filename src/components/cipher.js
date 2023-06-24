@@ -8,24 +8,11 @@ import axios from 'axios';
 
 const Cipher = () => {
   const [isGameStarted, setIsGameStarted] = useState(false);
-  const [username, setUsername] = useState(""); // Added state for username
+ // Added state for username
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    // Fetch the user's data from the server to check if they are logged in
-    axios
-      .get("https://cipherscape-api.onrender.com/", { withCredentials: true })
-      .then((result) => {
-        if (result.data.success) {
-          setUsername(result.data.username);
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-
+ 
   const handlePlayNow = () => {
     setIsGameStarted(true);
     const audio = new Audio(require('./song.mp3'));
@@ -49,7 +36,7 @@ const Cipher = () => {
               <img src={require('./cipher1.png')} alt="" />
             </div>
             <div className="game-info">
-              {username ? <p>Hi, {username}</p> : null}
+              {/* {username ? <p className='username'>Hi, {username}</p> : null} */}
               <p id="slg">Navigate the Celestial Path, Illuminate the Secrets Within</p>
               <p id="info">
                 Step into Cipherscape, an immersive puzzle-solving experience that takes you on a quest like no other.

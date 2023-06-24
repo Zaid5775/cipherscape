@@ -33,8 +33,8 @@ const handleSubmit = (e) =>{
       alert("Password does not match!");
       return;
     }
-
-            axios.post("https://cipherscape-api.onrender.com/Signup", {username, email, password, cpass} )
+// https://cipherscape-api.onrender.com/
+            axios.post("http://localhost:9002/Signup", {username, email, password, cpass} )
             .then( result => {
                 alert("Successfully Registered!!")
                 console.log(result)

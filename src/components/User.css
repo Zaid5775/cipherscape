@@ -1,0 +1,320 @@
+.user-container {
+  background-color: #080c10;
+  color: #cc57c7;
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: rgba(74, 46, 73, 0.09) 0px 2px 1px, rgba(99, 51, 93, 0.09) 0px 4px 2px, rgba(69, 34, 62, 0.09) 0px 8px 4px, rgba(66, 28, 60, 0.09) 0px 16px 8px, rgba(80, 39, 77, 0.09) 0px 32px 16px;
+  width: 750px;
+  margin: 0px auto 0;
+  text-align: left;
+  margin-bottom: 100px;
+  
+}
+.user-container {
+  /* Existing styles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+ .h2 {
+  /* margin-top: 0;
+  margin-bottom: 20px; */
+  font-size: 25px;
+}
+#h22, #h23 , #h21{
+  margin-top: 50px;
+}
+
+#h21{
+  margin-bottom: 50px;
+  font-size: 27px;
+}
+.user-info {
+  margin-bottom: 20px;
+}
+
+.user-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.change-password-form label {
+  display: block;
+  margin-bottom: 10px;
+  /* font-weight: bold; */
+  font-size: 16px;
+}
+
+.change-password-form input {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #cc57c7;
+  border-radius: 5px;
+  background-color: #080c10;
+  color: #cc57c7;
+  margin-bottom: 10px;
+}
+
+.change-password-form button {
+  background-color: #cc57c7;
+  color: #080c10;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50%;
+  margin-top: 10px;
+  /* font-weight: bold; */
+}
+
+.change-password-form button:hover {
+  background-color: #a63792;
+}
+
+.change-password-form button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* New styles */
+
+.user-info label {
+
+  /* font-weight: bold; */
+  color: #cc57c7;
+  display: inline-block;
+  width: 120px;
+  margin-right: 10px;
+}
+
+.user-info p.user-detail {
+  border: 2px solid #cc57c7;
+  /* padding: 5px; */
+  opacity: .9;
+  padding: 10px;
+
+  border-radius: 5px;
+  display: inline-block;
+  /* margin: 0; */
+}
+
+.change-password-form {
+  text-align: left;
+}
+
+.change-password-form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.change-password-form input[type="password"] {
+  width: 100%;
+}
+.user-info p.user-detail {
+  font-size: 15px;
+  border: 2px solid #cc57c7;
+  padding: 8px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+  width: 200px; /* Adjust the width as needed */
+}
+
+.change-password-form .form-group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.change-password-form label {
+  width: 200px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.change-password-form input[type="password"],
+.change-password-form input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #cc57c7;
+  border-radius: 5px;
+  background-color: #080c10;
+  color: #cc57c7;
+  margin-bottom: 10px;
+}
+
+
+.user-container .user-info,
+.user-container .change-password-form {
+  align-self: flex-start;
+}
+
+
+
+
+/* .change-password-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
+.change-password-form button {
+  display: block;
+  margin-left: 0;
+  width: auto;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* 
+
+.image-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-image {
+  margin-bottom: 10px;
+}
+
+.main-image img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.image-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-item {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.image-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #cc57c7;
+  overflow: hidden;
+}
+
+.image-item.selected .image-circle {
+  border: 2px solid #cc57c7;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-item:hover {
+  opacity: 0.7;
+} */
+
+.user-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-main-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  margin-bottom: 10px;
+}
+
+.user-thumbnail-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-thumbnail-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.user-thumbnail-image.active {
+  /* border: 2px solid #cc57c7; */
+  opacity: 0.5;
+}
+
+
+
+
+
+@media screen and (max-width: 800px)  {
+  .user-container {
+    width: 90%;
+    padding: 30px;
+  }
+  
+  .user-container .h2 {
+    font-size: 22px;
+  }
+  
+  .user-info label {
+    width: 100px;
+  }
+  
+  .user-info p.user-detail {
+    width: 250px;
+  }
+  
+  .change-password-form label {
+    width: 150px;
+  }
+  
+  .change-password-form input[type="password"],
+  .change-password-form input[type="text"] {
+    width: 165%;
+  }
+  
+  .change-password-form button {
+    width: 70%;
+  }
+  
+  .user-main-image {
+    width: 150px;
+    height: 150px;
+  }
+ 
+  .user-thumbnail-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .user-thumbnail-image {
+    flex-basis: 25%;
+    max-width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 7px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+}
