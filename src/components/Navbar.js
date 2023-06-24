@@ -6,23 +6,18 @@ import './Navbar.css';
 const Navbar = () => {
   const [username, setUsername] = useState("");
   const [mainImageSrc, setMainImage] = useState("");
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   useEffect(() => {
-
-
-      const storedImage = localStorage.getItem('mainImage');
-      if (storedImage) {
-        setMainImage(JSON.parse(storedImage));
-      }
-      
-    
-
+    const storedImage = localStorage.getItem('mainImage');
+    if (storedImage) {
+      setMainImage(JSON.parse(storedImage));
+    }
 
     axios.get("https://cipherscape-api.vercel.app/user")
       .then((res) => {
         if (res.data.success) {
           setUsername(res.data.username);
-  
           console.log("ho gyaa yayyyyyyyyyyyyyyy");
         } else {
           console.log("nhi hai bhai naam");
@@ -33,11 +28,20 @@ const Navbar = () => {
       });
   }, []);
 
+  const handleToggle = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+
   return (
-    <div className="navvv">
+    <div className={`navvv ${navbarOpen ? "navbar-open" : ""}`}>
       <div className="navvv1">
         <nav>
-          <ul>
+          <div id="toggleBtn" onClick={handleToggle}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul className="nav-links">
             <li>
               <Link id='setting' to="/setting">Settings</Link>
             </li>

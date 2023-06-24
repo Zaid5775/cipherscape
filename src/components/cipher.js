@@ -45,7 +45,7 @@ const Cipher = () => {
               </p>
               <audio src="song.mp3" type="audio/mp3" autoPlay loop></audio>
               <button id="play-button" className="button-30" role="button" onClick={handlePlayNow}>
-                Play Now <img id="play" src={require('./play.png')} alt="" />
+                Play Now 
               </button>
             </div>
           </div>

@@ -8,12 +8,14 @@
 
 
 *{
+   background-color : #070A0E;
     box-sizing: border-box;
+   
       font-family: 'MyFont';
 }
 
 body{
-    background-color : #070A0E;
+    /*  */
   
     font-family: 'MyFont';
       
@@ -22,9 +24,9 @@ body{
 
 
 .container0{
- 
-    margin-left: 20px;
-    margin-right: 50px;
+  background-color : #070A0E;
+    /* margin-left: 20px;
+    margin-right: 50px; */
 }
 
 .head{
@@ -59,6 +61,18 @@ body{
     margin-top: 100px;
 }
 
+
+/* .game-info #play {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #CC57C7;
+  font-size: 18px;
+} */
+
+.game-info #play img {
+  width: 0px;
+}
 
 
 

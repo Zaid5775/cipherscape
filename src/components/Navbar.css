@@ -1,21 +1,20 @@
-nav {
-  background-color: #070A0E;
+.nav {
+    background-color : #070A0E;
   color: #CC57C7;
   padding: 10px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
 .navvv {
- 
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   margin: 0;
-  margin-top: 20px;
-  padding: 0 20px;
+  margin-top: 0px;
+  padding: 0 0px;
 }
 
 ul {
@@ -24,11 +23,6 @@ ul {
   align-items: center;
   margin: 0;
   padding: 0;
-}
-
-#setting,
-#htp {
-  margin-right: 20px;
 }
 
 li {
@@ -64,6 +58,9 @@ a:hover {
 }
 
 @media screen and (max-width: 800px) {
+  .navvv {
+    margin-top: 0px; /* Adjust the margin-top value as needed */
+  }
   ul {
     flex-direction: column;
     align-items: flex-start;
@@ -72,4 +69,66 @@ a:hover {
   li {
     margin-bottom: 10px;
   }
+
+  #usr {
+    margin-right: 0;
+  }
+}
+
+/* Toggle button styles */
+#toggleBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+#toggleBtn span {
+  width: 100%;
+  height: 3px;
+  background-color: #CC57C7;
+  transition: all 0.3s ease;
+}
+
+.navbar-open #toggleBtn span:first-child {
+  transform: rotate(45deg) translate(3px, 6px);
+}
+
+.navbar-open #toggleBtn span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-open #toggleBtn span:last-child {
+  transform: rotate(-45deg) translate(3px, -6px);
+}
+
+@media screen and (max-width: 800px) {
+  #toggleBtn {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .navvv {
+    /* Other CSS properties */
+    height: 60px; /* Adjust the height value as needed */
+   
+  }
+  
+  .navbar-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+    .nav-links li a {
+      color: #CC57C7;
+    }
+  
 }
