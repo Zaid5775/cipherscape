@@ -15,7 +15,7 @@ function Login({handleLogin}) {
     axios.defaults.withCredentials = true;
 
     axios
-      .post("https://cipherscape-api.onrender.com/Login", { username, password })
+      .post("https://cipherscape-api.vercel.app/Login", { username, password })
       .then((result) => {
         console.log(result);
         if (result.data.success) {

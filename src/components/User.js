@@ -66,7 +66,7 @@ const User = () => {
   
     // Make API request to change password
     axios
-      .post('https://cipherscape-api.onrender.com/ChangePassword', {
+      .post('https://cipherscape-api.vercel.app/ChangePassword', {
         username: username,
         oldPassword: oldPassword,
         newPassword: newPassword,
@@ -87,7 +87,7 @@ const User = () => {
   axios.defaults.withCredentials = true
   useEffect(() => {
     axios
-      .get('https://cipherscape-api.onrender.com/', { withCredentials: true })
+      .get('https://cipherscape-api.vercel.app/user', { withCredentials: true })
       .then((res) => {
         const { success, email, username } = res.data;
         if (success) {
