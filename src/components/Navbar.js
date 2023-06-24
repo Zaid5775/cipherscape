@@ -14,6 +14,9 @@ const Navbar = () => {
       if (storedImage) {
         setMainImage(JSON.parse(storedImage));
       }
+      else{
+        setMainImage(require('./gamer1.png'))
+      }
     
 
 
