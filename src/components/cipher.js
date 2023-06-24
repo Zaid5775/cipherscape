@@ -44,9 +44,10 @@ const Cipher = () => {
                 emerge victorious?
               </p>
               <audio src="song.mp3" type="audio/mp3" autoPlay loop></audio>
-              <button id="play-button" className="button-30" role="button" onClick={handlePlayNow}>
+              <button id="play-button" className="button-30" role="button" >
                 Play Now 
               </button>
+              {/* onClick={handlePlayNow} */}
             </div>
           </div>
         </>
