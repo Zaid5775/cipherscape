@@ -14,9 +14,7 @@ const Navbar = () => {
       if (storedImage) {
         setMainImage(JSON.parse(storedImage));
       }
-      else{
-        setMainImage(require('./gamer1.png'))
-      }
+      
     
 
 
@@ -54,7 +52,7 @@ const Navbar = () => {
       </div>
       
       <div className="usrul">
-        <Link id="usr" to='/User'>{username}<img id="img-gamer" src={mainImageSrc.src} alt="Main Image" /></Link>
+        <Link id="usr" to='/User'>{username}<img id="img-gamer" src={mainImageSrc.src || require('./gamer1.png')}  alt="Main Image" /></Link>
       </div>
     </div>
   );
