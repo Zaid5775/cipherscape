@@ -14,7 +14,7 @@ const Navbar = () => {
       setMainImage(JSON.parse(storedImage));
     }
 
-    axios.get("http://localhost:9002/user")
+    axios.get("https://cipherscape-api.vercel.app/user")
       .then((res) => {
         if (res.data.success) {
           setUsername(res.data.username);

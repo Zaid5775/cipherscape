@@ -12,7 +12,7 @@ const navigate = useNavigate()
   useEffect(() => {
 
 axios
-      .get("https://cipherscape-api.onrender.com")
+      .get("https://cipherscape-api.vercel.app/user")
 
       .then((res) => {
         if(res.data.success){

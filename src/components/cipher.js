@@ -12,7 +12,9 @@ const Cipher = () => {
 
   const navigate = useNavigate();
 
- 
+ const handleUnder = () =>{
+  navigate("./Under")
+ }
   const handlePlayNow = () => {
     setIsGameStarted(true);
     const audio = new Audio(require('./song.mp3'));
@@ -44,7 +46,7 @@ const Cipher = () => {
                 emerge victorious?
               </p>
               <audio src="song.mp3" type="audio/mp3" autoPlay loop></audio>
-              <button id="play-button" className="button-30" role="button" >
+              <button id="play-button" className="button-30" onClick={handleUnder} role="button" >
                 Play Now 
               </button>
               {/* onClick={handlePlayNow} */}

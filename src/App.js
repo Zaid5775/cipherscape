@@ -24,6 +24,7 @@ function App() {
         <Route path="/Login" element={<Login handleLogin={handleLogin} />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/User" element={<User />} />
+        <Route path="/Under" element={<Under />} />
         <Route path="/Howtoplay" element={<Howtoplay />} />
         {/* <Route path="/About" element={<About />} /> */}
 
