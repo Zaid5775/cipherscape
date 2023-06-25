@@ -56,7 +56,7 @@ const Navbar = () => {
       </div>
       
       <div className="usrul">
-        <Link id="usr" to='/User'>{username}<img id="img-gamer" src={mainImageSrc.src || require('./gamer1.png')}  alt="Main Image" /></Link>
+        <Link id="usr" to='/User'>{username || "USERNAME NOT AVAILABLE"}<img id="img-gamer" src={mainImageSrc.src || require('./gamer1.png')}  alt="Main Image" /></Link>
       </div>
     </div>
   );

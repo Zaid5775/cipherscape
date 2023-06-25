@@ -130,11 +130,11 @@ const User = () => {
       <div className="user-info">
         <p><label>
           Username:
-          <p  className='user-detail'>{username}</p>
+          <p  className='user-detail'>{username || "NOT AVAILABLE"}</p>
         </label></p>
         <p><label>
           Email:
-          <p className='user-detail'>{email}</p>
+          <p className='user-detail'>{email || "NOT AVAILABLE"}</p>
         </label></p>
       </div>
       <p className='h2'  id = "h23">Change Password</p>
