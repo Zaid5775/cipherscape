@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Navbar.css';
-
 const Navbar = () => {
   const [username, setUsername] = useState("");
   const [mainImageSrc, setMainImage] = useState("");
@@ -46,7 +45,7 @@ const Navbar = () => {
               <Link id='setting' to="/setting">Settings</Link>
             </li>
             <li>
-              <Link id='htp' to="/Howtoplay">How to Play?</Link>
+              <Link id='htp' to="/Under">How to Play?</Link>
             </li>
             <li>
               <Link to="/About">About</Link>
@@ -56,7 +55,7 @@ const Navbar = () => {
       </div>
       
       <div className="usrul">
-        <Link id="usr" to='/User'>{username || "USERNAME NOT AVAILABLE"}<img id="img-gamer" src={mainImageSrc.src || require('./gamer1.png')}  alt="Main Image" /></Link>
+        <Link id="usr" to='/User'>{username}<img id="img-gamer" src={mainImageSrc.src || require('./gamer1.png')}  alt="Main Image" /></Link>
       </div>
     </div>
   );
