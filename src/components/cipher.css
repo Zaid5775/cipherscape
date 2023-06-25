@@ -24,9 +24,10 @@ body{
 
 
 .container0{
+  margin-top: 20px;
   background-color : #070A0E;
-    /* margin-left: 20px;
-    margin-right: 50px; */
+    margin-left: 20px;
+    margin-right: 0px;
 }
 
 .head{
@@ -41,6 +42,7 @@ body{
 .game-info{
     margin-left: 50px;
     margin-top: 200px;
+    margin-right: 50px;
     margin-bottom: 100px;
 }
 .game-info #slg{
@@ -62,13 +64,13 @@ body{
 }
 
 
-/* .game-info #play {
+.game-info #play {
   display: flex;
   align-items: center;
   gap: 5px;
   color: #CC57C7;
   font-size: 18px;
-} */
+}
 
 .game-info #play img {
   width: 0px;

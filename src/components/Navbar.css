@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+#htp , #setting {
+  margin-right: 40px;
+}
+
 .navvv {
   display: flex;
   justify-content: space-between;

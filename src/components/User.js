@@ -87,7 +87,7 @@ const User = () => {
   axios.defaults.withCredentials = true
   useEffect(() => {
     axios
-      .get('https://cipherscape-api.vercel.app/user', { withCredentials: true })
+      .get('http://localhost:9002/user', { withCredentials: true })
       .then((res) => {
         const { success, email, username } = res.data;
         if (success) {
