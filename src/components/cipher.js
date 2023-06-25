@@ -49,9 +49,16 @@ const Cipher = () => {
               <button id="play-button" className="button-30" onClick={handleUnder} role="button" >
                 Play Now 
               </button>
+            
+
               {/* onClick={handlePlayNow} */}
             </div>
+            
           </div>
+          <div className='tilt-main'>
+              <div  className='tilt'><p>tilt your phone</p></div>
+              <div className='tilt_img'><img  src = {require("./tilt.png")}></img></div>
+              </div>
         </>
       )}
     </div>

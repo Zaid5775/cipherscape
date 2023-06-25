@@ -76,8 +76,23 @@ body{
   width: 0px;
 }
 
+.tilt-main{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 
+}
 
+.tilt p{
+  font-size: 0px;
+}
+.tilt_img img{
+  width: 0px;
+  margin-left: 5px;
+}
 /* // NAVBARRR */
 
 
@@ -160,6 +175,10 @@ width: 22px;
     .logo-main img{
         width: 250px;
     }
+    .logo-main img{
+      margin-top: 20px;
+  }
+  
     .game-info{
         margin-top: 20px;;
         margin-left: 30px;
@@ -177,7 +196,23 @@ width: 22px;
         font-size: 15px;
     
     }
+    .tilt-main{
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    
+    }
+    .tilt_img img{
+      width: 30px;
+      margin-left: 5px;
+    }
 
+    .tilt p{
+      font-size: 20px;
+    }
 
 }
 
