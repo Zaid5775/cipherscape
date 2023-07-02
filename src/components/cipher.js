@@ -17,11 +17,6 @@ const Cipher = () => {
  }
   const handlePlayNow = () => {
     setIsGameStarted(true);
-    const audio = new Audio(require('./song.mp3'));
-    audio.loop = true;
-    audio.play().catch(error => {
-      console.error('Failed to play audio:', error);
-    });
   };
 
   return (

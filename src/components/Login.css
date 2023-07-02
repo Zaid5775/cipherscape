@@ -29,6 +29,7 @@
     }
     
     .uname input,  .pass input, .cpass input, .email input{
+      cursor: url("./line.png") , auto;
     height: 43;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -92,7 +93,8 @@
         white-space: nowrap;
         will-change: box-shadow,transform;
         font-size: 18px;
-        width : 25%
+        width : 25% ;
+        cursor: url("./cur.png") , auto;
       }
       
       .Login button:focus {
@@ -137,6 +139,7 @@
     
       .Login button {
         width: 100%;
+        cursor: url("./cur.png") , auto;
       }
 /* 
       .Login  button{

@@ -127,8 +127,9 @@ const Game = () => {
   return (
     <div className="game">
       
-      <div className="header">
+      <div className="header-g">
   {/* <div className="room-info"> */}
+  
     <p className="room-number">Room {currentRoom}</p>
     <p className="room-name">{roomNames[currentRoom]}</p>
   {/* </div> */}
@@ -140,8 +141,8 @@ const Game = () => {
   </div>
 </div>
 
-<div className="middle">
-  <p className="room-description">{roomDescription}</p>
+<div className="middle-g">
+  <p className="room-description"> {roomDescription}</p>
   <div className="room-items">
     
     {roomItems[currentRoom] && roomItems[currentRoom].length > 0 ? (

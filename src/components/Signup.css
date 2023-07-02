@@ -37,6 +37,7 @@ text-align: left;
 border-radius: 5px;
 background: #070A0E;
 border-color: #CC57C7;
+cursor: url("./line.png") , auto;
 
 }
 
@@ -92,6 +93,8 @@ border-color: #CC57C7;
     will-change: box-shadow,transform;
     font-size: 18px;
     width: 25%;
+  cursor: url("./cur.png") , auto;
+
   }
   
   .button200 button:focus {

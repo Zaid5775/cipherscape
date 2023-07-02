@@ -6,11 +6,21 @@ import Signup from './components/Signup';
 import Howtoplay from './components/Howtoplay';
 import Under from './components/under'
 import User from './components/User'
+import About from './components/About';
+
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
 
   const handleLogin = () => {
     setLoggedIn(true);
+
+    if (loggedIn) {
+      const audio = new Audio(require('./song.mp3'));
+      audio.loop = true;
+      audio.play().catch(error => {
+        console.error('Failed to play audio:', error);
+      });
+    }
   };
 
   const handleLogout = () => {
@@ -26,8 +36,7 @@ function App() {
         <Route path="/User" element={<User />} />
         <Route path="/Under" element={<Under />} />
         <Route path="/Howtoplay" element={<Howtoplay />} />
-        {/* <Route path="/About" element={<About />} /> */}
-
+        <Route path = "/About" element= {<About/>} />
         <Route
           path="/"
           element={

@@ -34,6 +34,7 @@ const handleSubmit = (e) =>{
       return;
     }
 // https://cipherscape-api.onrender.com/
+// https://cipherscape-api.vercel.app/
             axios.post("https://cipherscape-api.vercel.app/Signup", {username, email, password, cpass} )
             .then( result => {
                 alert("Successfully Registered!!")

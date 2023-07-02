@@ -7,9 +7,15 @@
   align-items: center;
 }
 
-#htp , #setting {
+#htp , #setting, #home-pg{
   margin-right: 40px;
+  cursor: url("./cur.png") , auto;
 }
+
+#home-pg img{
+  width: 70px;
+}
+
 
 .navvv {
   display: flex;
@@ -35,6 +41,7 @@ li {
 }
 
 a {
+  cursor: url("./cur.png") , auto;
   color: #CC57C7;
   text-decoration: none;
   font-size: 18px;
@@ -59,6 +66,8 @@ a:hover {
 #usr img {
   width: 30px;
   margin-left: 5px;
+  cursor: url("./cur.png") , auto;
+
 }
 
 @media screen and (max-width: 800px) {

@@ -8,10 +8,33 @@
 
 
 *{
+  /* cursor: url("./cursor.png") 100 10 , auto; */
+
+    
+  cursor: url("./cursor.png"), auto;
+  
    background-color : #070A0E;
+
     box-sizing: border-box;
    
       font-family: 'MyFont';
+}
+
+
+cursor {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  background-image: url("./cursor.png");
+  background-size: cover;
+  pointer-events: none;
+  animation: cursorAnimation 0.2s infinite;
+}
+
+@keyframes cursorAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
 }
 
 body{
@@ -56,6 +79,7 @@ body{
 
 }
 .game-info #play{
+  cursor: url("./cur.png") , auto;
     width: 17px;
     margin-left: 5px;
 }
@@ -254,7 +278,9 @@ color: rgb(21, 21, 21);
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 21px;
+  cursor: url("./cur.png") , auto;
 }
+
 
 .button-30:focus {
   box-shadow: rgba(74, 52, 73, 0.5) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(74, 52, 73, 0.5) 0 -3px 0 inset;

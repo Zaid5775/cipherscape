@@ -1,42 +1,167 @@
-*{
-color: #CC57C7;
-}
-
-
-.Head{
+* {
+    color: #cc57c7;
+  }
+  
+  .Head-h {
+    background-color: #070a0e;
+    color: #cc57c7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(74, 46, 73, 0.09) 0px 2px 1px, rgba(99, 51, 93, 0.09) 0px 4px 2px,
+      rgba(69, 34, 62, 0.09) 0px 8px 4px, rgba(66, 28, 60, 0.09) 0px 16px 8px,
+      rgba(80, 39, 77, 0.09) 0px 32px 16px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 10px;
     
-    margin-top: 70px;
-    
-}
-
-.logo{
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    
-}
-#logo{
+  }
+  
+  #logo {
     width: 250px;
     align-items: center;
     margin-right: 70px;
-}
-
-.middle {
-    margin-left: 150px;
+  }
+  
+  .middle-h {
+    margin: 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-}
-
-.heading{
+  }
+  .howto1 {
+    margin-top: 50px;
+  }
+  .heading-h {
     font-size: 24px;
-}
-
-
-.content {
-    line-height: 1.5; 
+  }
+  
+  .content-h {
+    line-height: 1.5;
     word-spacing: 10px;
+  }
+  
+
+
+      
+  .content-h button {
+    align-items: center;
+    appearance: none;
+    background-color: #CC57C7;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: 0 2px 4px rgba(74, 52, 73, 0.5), 0 7px 13px -3px rgba(87, 65, 86, 0.5), 0 -3px 0 inset rgba(77, 57, 76, 0.5);
+  box-sizing: border-box;
+  color: rgb(21, 21, 21);
+  
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'MyFont';
+    height: 30px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    width : 10%;
+    cursor: url("./cur.png") , auto;
+  }
+  
+  /* .content-h button:focus {
+    box-shadow: rgba(74, 52, 73, 0.5) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(74, 52, 73, 0.5) 0 -3px 0 inset;
+  }
+  
+  .content-h button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(74, 52, 73, 0.5) 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .content-h button:active {
+    box-shadow: rgba(74, 52, 73, 0.5) 0 3px 7px inset;
+    transform: translateY(2px);
+  } */
+  .controls{
+    /* text-align: left; */
+    align-items: center;
+    border: #341932 2px solid;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(74, 52, 73, 0.5), 0 7px 13px -3px rgba(87, 65, 86, 0.5), 0 -3px 0 inset rgba(77, 57, 76, 0.5); */
+    /* text-align: left; */
+    margin-bottom: 50px;
+    margin-right: 15px;
+    
+    /* align-items:flex-start; */
+  }
+
+.controls-button{
+  text-align: left;
+  margin-left: 300px;
+  margin-bottom: 40px;
 }
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.nav a{
+  text-decoration: none;
+}
+
+
+  @media screen and (max-width: 800px) {
+    .Head-h {
+      padding: 20px;
+      width: 90%;
+      margin-bottom: 75px;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    #logo {
+      width: 150px;
+      margin-right: 0;
+    }
+  
+    .middle-h {
+      margin: 0;
+    }
+
+    .controls-button{
+      text-align: left; 
+       margin-left: 20px;
+      margin-bottom: 40px;
+    }
+    .content-h button {
+      width: 20%;
+    }
+  }
+  

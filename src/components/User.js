@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import{ Link } from "react-router-dom"
 import './User.css';
 
 const User = () => {
@@ -105,7 +105,11 @@ const User = () => {
   }, []);
 
   return (
+    
     <div className="user-container">
+    <div className='user-info'>
+      <Link to = "/"><img  className = "back" src = {require('./home.png')}/> </Link>
+    </div>
       <p className='h2'  id = "h21">{username}</p>
       <div className="user-images">
   <img

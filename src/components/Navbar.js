@@ -12,13 +12,14 @@ const Navbar = () => {
     if (storedImage) {
       setMainImage(JSON.parse(storedImage));
     }
-
+    // https://cipherscape-api.vercel.app
     axios.get("https://cipherscape-api.vercel.app/user")
       .then((res) => {
         if (res.data.success) {
           setUsername(res.data.username);
           console.log("ho gyaa yayyyyyyyyyyyyyyy");
         } else {
+          console.log(res.data.message)
           console.log("nhi hai bhai naam");
         }
       })
@@ -45,7 +46,7 @@ const Navbar = () => {
               <Link id='setting' to="/setting">Settings</Link>
             </li>
             <li>
-              <Link id='htp' to="/Under">How to Play?</Link>
+              <Link id='htp' to="/Howtoplay">How to Play?</Link>
             </li>
             <li>
               <Link to="/About">About</Link>

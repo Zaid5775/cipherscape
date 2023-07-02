@@ -1,0 +1,109 @@
+*{
+    background-color : #070A0E;
+     box-sizing: border-box;
+    
+       font-family: 'MyFont';
+ }
+ 
+.container3{
+    margin-top: 0px;
+}
+#main-title-img{
+    width: 30px;
+  cursor: url("./cur.png") , auto;
+
+}
+.main-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.user-home{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.main-img-about{
+    align-items: center;
+    margin-top: 50px;
+    width: 350px;
+}
+
+.main-text-about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    
+    
+    
+    
+}
+
+.main-text-left h2{
+   
+    color: #cc57c7;
+    font-size: 40px;
+    margin-right: 0px;
+}
+.main-text-right span{
+    color: #cc57c7;
+    font-size: 45px;
+}
+.main-text-right p{
+    color: #cc57c7;
+    font-size: 20px;
+    line-height: 2em;
+    padding-right: 160px;
+    padding-left: 160px;
+    text-align: center;
+
+}
+
+.social-acc{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin-bottom: 30px;
+ /* cursor: url("./cur.png") , auto; */
+
+ 
+}
+.social1 , .social2 , .social3, .social4{
+    margin: 7px;
+    line-height: 2em;
+  /* cursor: url("./cur.png") , auto; */
+    
+
+}
+
+
+
+
+@media screen and (max-width: 800px){
+    .container3{
+        margin-top: 40px;
+    }
+    .main-text-right p{
+        color: #cc57c7;
+        font-size: 14px;
+        line-height: 2em;
+        padding-right: 25px;
+        padding-left: 25px;
+        text-align: left;
+    
+    }
+    
+.main-img{
+    align-items: center;
+    margin-top: 10px;
+    width: 150px;
+}
+
+.main-text-right span{
+    color: #cc57c7;
+    font-size: 30px;
+}
+    
+}

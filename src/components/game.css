@@ -20,7 +20,11 @@ body{
     
 }
 
-.header {
+.game{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.header-g {
 margin-top: 70px;
 display: flex;
 display: flex;
@@ -64,7 +68,7 @@ overflow: hidden;
 height: 100%;
 background-color: #CC57C7; /* Adjust the color based on your design */
 }
-.middle {
+.middle-g {
 font-size: 18px;
 margin-top: 60px;
 margin-right: 200px;
@@ -82,10 +86,10 @@ margin-top: 30px;
 }
 
 
-button{
+.action-buttons{
 margin-top: 20px;
 }
-button{
+.action-buttons button{
   
   margin-right: 10px;
   align-items: center;
@@ -117,27 +121,28 @@ touch-action: manipulation;
 white-space: nowrap;
 will-change: box-shadow,transform;
 font-size: 18px;
+width: 5%;
 }
 
 
-button:focus {
+.action-buttons  button:focus {
 box-shadow: rgba(74, 52, 73, 0.5) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(74, 52, 73, 0.5) 0 -3px 0 inset;
 }
 
-button:hover {
+.action-buttons  button:hover {
 box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(74, 52, 73, 0.5) 0 -3px 0 inset;
 transform: translateY(-2px);
 }
 
-button:active {
+.action-buttons  button:active {
 box-shadow: rgba(74, 52, 73, 0.5) 0 3px 7px inset;
 transform: translateY(2px);
 }
 
 .additional-buttons {
 margin-top: 20px;
-
-button {
+}
+.additional-buttons button {
    
   margin-right: 10px;
   align-items: center;
@@ -172,17 +177,17 @@ font-size: 18px;
   
 }
 
-button:focus {
+.additional-buttons  button:focus {
   box-shadow: rgba(74, 52, 73, 0.5) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(74, 52, 73, 0.5) 0 -3px 0 inset;
 }
 
-button:hover {
+.additional-buttons  button:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(74, 52, 73, 0.5) 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
-button:active {
+.additional-buttons  button:active {
   box-shadow: rgba(74, 52, 73, 0.5) 0 3px 7px inset;
   transform: translateY(2px);
 }
-}
+
